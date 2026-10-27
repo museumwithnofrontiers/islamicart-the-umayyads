@@ -1,0 +1,133 @@
+{
+  "about": "The frame this website takes from legacy Discover Islamic Art's virtual exhibition The Umayyads (exhibitions/ISL/the_umayyads/), each file as legacy serves it, byte for byte; the curators' logos come from the exhibitions' shared sponsor_logo folder. tests/assets.test.js checks every file against its hash. Legacy drew no Swedish map (map_se.jpg): the map window shows none in Swedish.",
+  "files": {
+    "theme/assets/legacy/arrow_inner_black.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/arrow_inner_black.gif",
+      "sha256": "a969e5e62fe3c75dcb4e05ef1ca4e38f67a528916db802c229511b44567bd87a"
+    },
+    "theme/assets/legacy/bg_fading_left.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/bg_fading_left.gif",
+      "sha256": "a0802ce9a1d79fa515fbf28e3b948362a8dca5e6d5bee14d9da1033824ad61d3"
+    },
+    "theme/assets/legacy/bg_fading_right.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/bg_fading_right.gif",
+      "sha256": "252aead2c2bf46dbba7d0d0218a599f28e3929aa55ca52bd4c5aa9e496a3c4a6"
+    },
+    "theme/assets/legacy/DE-10.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/sponsor_logo/DE-10.gif",
+      "sha256": "f54e04f0154d29116743a711254c665727ff11e27eadd92550db8b0335deb497"
+    },
+    "theme/assets/legacy/exhibition_bg_ar.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/exhibition_bg_ar.jpg",
+      "sha256": "2a0ac71f2bc61e57cff1f9470427479d4d17a3d0950ab28104e6c70667d30ac8"
+    },
+    "theme/assets/legacy/exhibition_bg.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/exhibition_bg.jpg",
+      "sha256": "ddcc9a95617ea946619648884d6b4584112ac85e161ad0f65f1b4c626586bfd3"
+    },
+    "theme/assets/legacy/home_bg_ar.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/home_bg_ar.jpg",
+      "sha256": "6a38c7c2883e86157e38246b4e1e7ea9db070f54320ac5517964c6fd33c56162"
+    },
+    "theme/assets/legacy/home_bg.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/home_bg.jpg",
+      "sha256": "84cbb2e2f7ad16e365102c65f366955a3fbb6e0f026cc13b09c2c73c4e80f6c6"
+    },
+    "theme/assets/legacy/ico_item_selected.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/ico_item_selected.gif",
+      "sha256": "8e4e35eebb1dda3a1495a2dc7a9d1a4611d9118f3f683a269823da701989feb5"
+    },
+    "theme/assets/legacy/ico_item.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/ico_item.gif",
+      "sha256": "0b630172707e2ed687751dd70acb096ef905a3ee56421c650c227520e10030c8"
+    },
+    "theme/assets/legacy/intro_bg_ar.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/intro_bg_ar.jpg",
+      "sha256": "1ea048d497a2015eb6978cd0ddcbc7084177d9ce0f5f0b0cd0f74bea97c35c3e"
+    },
+    "theme/assets/legacy/intro_bg.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/intro_bg.jpg",
+      "sha256": "a56bbd5cf97be2fda43ca8eb4acaea5b1b590f6b1a7aed9d9bb72abd4703926c"
+    },
+    "theme/assets/legacy/intro_map_thumb.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/intro_map_thumb.jpg",
+      "sha256": "49b9751e99bd664b9db2a9ab297a754f420e3df41aa61f33ed578af163221b53"
+    },
+    "theme/assets/legacy/JO-10.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/sponsor_logo/JO-10.gif",
+      "sha256": "51d998c91ac359ce969e530d0399869dc46856448283d2ca0a55223a8fcca00a"
+    },
+    "theme/assets/legacy/logo_ar.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/logo_ar.gif",
+      "sha256": "167382bd8784e5519a3092f207d06c03fdaa07b34a672cbb0ac183689bfdf772"
+    },
+    "theme/assets/legacy/logo_de.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/logo_de.gif",
+      "sha256": "d4e6c6a912e78bea483e5f004bcd86e7f8d13104181cc4a3bb7e1684bf5906f6"
+    },
+    "theme/assets/legacy/logo_en.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/logo_en.gif",
+      "sha256": "404238bd630d09b80bf53211d31dcb323ff89b29cb45a4110f914e93a12ad15b"
+    },
+    "theme/assets/legacy/logo_es.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/logo_es.gif",
+      "sha256": "ac285fd324a3613d449a5f660623bc31da3174025b21791fdce31968c4787e63"
+    },
+    "theme/assets/legacy/logo_fr.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/logo_fr.gif",
+      "sha256": "42c41e3cfbbecfcb301e1dea74924cd728e53c041a72ef7cfb95cdb0d9392827"
+    },
+    "theme/assets/legacy/logo_it.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/logo_it.gif",
+      "sha256": "3518d7caef08a28dd40bf3039f483626fe63aa2d4f41f9fc709f17e02949db11"
+    },
+    "theme/assets/legacy/logo_pt.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/logo_pt.gif",
+      "sha256": "267f5666cb831f7e31204f4374d397bb097aa247ed1834fb334bc2b5e89a1fdb"
+    },
+    "theme/assets/legacy/logo_se.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/logo_se.gif",
+      "sha256": "b7f99b6269e5682d8554c42f78410fc95c146a60c79d3ce55d55426c880b717e"
+    },
+    "theme/assets/legacy/logo_tr.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/logo_tr.gif",
+      "sha256": "60aabc5a999165e68cc468e17aaa30dd1f7506d2b1d09e128afc0be23706bf3a"
+    },
+    "theme/assets/legacy/map_ar.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/map_ar.jpg",
+      "sha256": "afa53ce336af6625c45f22645acf01ead322d42c4ec7088c54c9f9bb6d26bba9"
+    },
+    "theme/assets/legacy/map_de.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/map_de.jpg",
+      "sha256": "687c5e1a674768f873c14098aa6f878815f6f2d2a14429251198dc3dc2f24e6c"
+    },
+    "theme/assets/legacy/map_en.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/map_en.jpg",
+      "sha256": "13829e5b08a2a90cb2153a98b1f0fb7b207d567349143fb4549476623c812a0b"
+    },
+    "theme/assets/legacy/map_es.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/map_es.jpg",
+      "sha256": "40c2d423f3bb574cfb0f15aa383a84da42367c470694ce66130d0504330fbf3a"
+    },
+    "theme/assets/legacy/map_fr.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/map_fr.jpg",
+      "sha256": "e1f2a6dac91bb9353535dcb1e19f79ccec84b889783bf37e65eff46b4ad373a6"
+    },
+    "theme/assets/legacy/map_it.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/map_it.jpg",
+      "sha256": "3f4b7e492e09a1fcd9ce141dfd51be5b5484ab6b45f7136de5c68548dc520127"
+    },
+    "theme/assets/legacy/map_pt.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/map_pt.jpg",
+      "sha256": "8c8a78c67b81784075a4a74e1648cc6397b6f29f09b0c8e6894b394adb3b4ef6"
+    },
+    "theme/assets/legacy/map_tr.jpg": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/map_tr.jpg",
+      "sha256": "f371b603c016259e10544e119606f5c9175b248a63085c8228755c164fa5d1c1"
+    },
+    "theme/assets/legacy/print_dark.gif": {
+      "source": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/images/print_dark.gif",
+      "sha256": "49894d52c06b6f8e1c29b0b3f82245bcd3f439108e4cd3a7c4f16360ed896742"
+    }
+  }
+}

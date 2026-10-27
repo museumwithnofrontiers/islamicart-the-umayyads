@@ -1,82 +1,204 @@
 /*
- * The website's visual identity. Every value below is a neutral starting
- * point — change them freely; this file belongs to the webdesigner.
- *
- * Full token documentation with explanations:
- * node_modules/@museumwnf/viewer-layout/src/tokens.reference.css
+ * The visual identity of The Umayyads: every value its legacy
+ * stylesheet set (the_umayyads/_styles.css, and _styles_ar.css over it
+ * for Arabic), transcribed by inventory-app's scripts/minisites/legacy-theme.mjs.
+ * viewer-layout's minisite.css lays the pages out with them. This file
+ * belongs to the webdesigner: change a value here.
  */
 
 :root {
-  /* ---------- Global ---------- */
-  --mwnf-font-body: system-ui, sans-serif;
-  --mwnf-font-heading: inherit;
-  --mwnf-line-height: 1.6;
-  --mwnf-weight-heading: 700;
-  --mwnf-color-text: #1c1c1c;
-  --mwnf-color-background: #ffffff;
-  --mwnf-color-accent: #1c1c1c;
-  --mwnf-color-muted: #555555;
-  --mwnf-color-border: #dddddd;
-  --mwnf-content-width: 64rem;
-  --mwnf-content-padding: 1rem;
-  --mwnf-space: 0.75rem;
-  --mwnf-radius: 0.25rem;
-  --mwnf-section-border: 1px solid #dddddd;
-  --mwnf-section-title-size: 1rem;
+  --minisite-page: #6A6070;
+  --minisite-font: Normal 12px/14px verdana, arial , helvetica;
+  --minisite-link: #744a8c;
+  --minisite-header: #4E375B;
+  --minisite-header-logo-left: 0px;
+  --minisite-header-nav-left: 400px;
+  --minisite-header-nav-width: 350px;
+  --minisite-header-nav-align: right;
+  --minisite-header-text: #e3bdde;
+  --minisite-header-link: #e3bdde;
+  --minisite-header-link-font: Normal 11px verdana, arial , helvetica;
+  --minisite-select: #eeeeee;
+  --minisite-select-text: #7D7268;
+  --minisite-select-font: Normal 11px verdana, arial , helvetica;
+  --minisite-menu: none repeat scroll 0 0 #382741;
+  --minisite-menu-font: Normal 9px verdana, arial , helvetica;
+  --minisite-menu-text: #A89CAE;
+  --minisite-menu-item-padding: 0 3px 0 3px;
+  --minisite-menu-link: #A89CAE;
+  --minisite-strip: #4e375b;
+  --minisite-footer: #382741;
+  --minisite-footer-text: #AEA4B4;
+  --minisite-footer-font: Normal 9px verdana, arial , helvetica;
+  --minisite-footer-link: #A89CAE;
+  --minisite-tip: #6b6070;
+  --minisite-tip-text: #f3ecf4;
+  --minisite-tip-border: 1px solid #ffffff;
+  --minisite-tip-font: Normal 10px/11px verdana, arial , helvetica;
+  --minisite-home-height: 532px;
+  --minisite-home-paper: #F3ECF4;
+  --minisite-home-bg1-height: 202px;
+  --minisite-home-bg1: #CDA867;
+  --minisite-home-bg2-height: 532px;
+  --minisite-home-title-left: 27px;
+  --minisite-home-title-top: 62px;
+  --minisite-home-title-width: 400px;
+  --minisite-home-title-font: normal 37px Georgia, "Times New Roman", Times, serif;
+  --minisite-home-title-color: #FCF8F8;
+  --minisite-home-description-left: 27px;
+  --minisite-home-description-top: 110px;
+  --minisite-home-description-width: 400px;
+  --minisite-home-description-font: normal 17px/20px Georgia, "Times New Roman", Times, serif;
+  --minisite-home-description-color: #f3ecf4;
+  --minisite-home-description-link: #f3ecf4;
+  --minisite-home-menu-left: 288px;
+  --minisite-home-menu-top: 280px;
+  --minisite-home-menu-width: 350px;
+  --minisite-home-menu-font: normal 12px/18px Georgia, "Times New Roman", Times, serif;
+  --minisite-home-menu2-left: 472px;
+  --minisite-home-menu2-top: 333px;
+  --minisite-home-menu2-width: 250px;
+  --minisite-home-menu2-font: normal 12px/18px Georgia, "Times New Roman", Times, serif;
+  --minisite-home-menu-link: #232E2B;
+  --minisite-home-menu-link-font: normal 12px/18px Georgia, "Times New Roman", Times, serif;
+  --minisite-home-menu-link-hover: #000000;
+  --minisite-home-menu-link-visited: #4E375B;
+  --minisite-partners: #4e375b;
+  --minisite-partners-height: 135px;
+  --minisite-partners-font: Normal 9px verdana, arial , helvetica;
+  --minisite-partners-line-margin-top: 15px;
+  --minisite-partners-line-margin-bottom: 10px;
+  --minisite-partners-line-font: Normal 9px verdana, arial , helvetica;
+  --minisite-partners-link: #ffffff;
+  --minisite-intro-paper: #F3ECF4;
+  --minisite-intro-title-left: 342px;
+  --minisite-intro-title-top: 56px;
+  --minisite-intro-title-width: 300px;
+  --minisite-intro-title-font: normal 40px Georgia, "Times New Roman", Times, serif;
+  --minisite-intro-title-color: #FCF8F8;
+  --minisite-intro-table-margin: 0 0 0 152px;
+  --minisite-intro-nav-start-left: 156px;
+  --minisite-intro-nav-start-top: 173px;
+  --minisite-intro-nav-start-width: 378px;
+  --minisite-intro-nav-start-align: left;
+  --minisite-intro-nav-start-font: Normal 10px/15px verdana, arial , helvetica;
+  --minisite-intro-nav-end-left: 470px;
+  --minisite-intro-nav-end-top: 173px;
+  --minisite-intro-nav-end-width: 278px;
+  --minisite-intro-nav-end-align: right;
+  --minisite-intro-nav-end-font: Normal 10px/15px verdana, arial , helvetica;
+  --minisite-intro-nav-color: #ffffff;
+  --minisite-intro-nav-link-font: bold 11px/15px verdana, arial , helvetica;
+  --minisite-intro-nav-link-color: #ffffff;
+  --minisite-intro-item-font: Normal 9px/13px verdana, arial , helvetica;
+  --minisite-intro-item-color: #333333;
+  --minisite-intro-item-link: #666666;
+  --minisite-intro-header-font: Bold 15px verdana, arial , helvetica;
+  --minisite-intro-text-font: Normal 11px/15px verdana, arial , helvetica;
+  --minisite-exhibition-paper: #CDA867;
+  --minisite-exhibition-head-height: 116px;
+  --minisite-exhibition-title-left: 20px;
+  --minisite-exhibition-title-top: 18px;
+  --minisite-exhibition-title-font: normal 40px Georgia, "Times New Roman", Times, serif;
+  --minisite-exhibition-title-color: #fcf8f8;
+  --minisite-exhibition-nav-start-left: 20px;
+  --minisite-exhibition-nav-start-top: 93px;
+  --minisite-exhibition-nav-start-width: 385px;
+  --minisite-exhibition-nav-start-align: left;
+  --minisite-exhibition-nav-start-font: Normal 11px/15px verdana, arial , helvetica;
+  --minisite-exhibition-nav-end-left: 366px;
+  --minisite-exhibition-nav-end-top: 93px;
+  --minisite-exhibition-nav-end-width: 385px;
+  --minisite-exhibition-nav-end-align: right;
+  --minisite-exhibition-nav-end-font: Normal 11px/15px verdana, arial , helvetica;
+  --minisite-exhibition-nav-color: #ffffff;
+  --minisite-exhibition-nav-link-font: bold 11px/15px verdana, arial , helvetica;
+  --minisite-exhibition-nav-link-color: #ffffff;
+  --minisite-exhibition-text-width: 380px;
+  --minisite-exhibition-text-paper: #F3ECF4;
+  --minisite-exhibition-page-title-font: normal 17px/15px Georgia, "Times New Roman", Times, serif;
+  --minisite-exhibition-page-title-color: #000000;
+  --minisite-exhibition-thumbs-top: 8px solid #4E375B;
+  --minisite-exhibition-thumbs-bottom: 1px solid #4E375B;
+  --minisite-exhibition-thumb-margin: 15px 4px 15px 0;
+  --minisite-exhibition-thumb-border: 1px solid #000000;
+  --minisite-exhibition-text-font: normal 11px/15px verdana, arial , helvetica;
+  --minisite-exhibition-quote-font: Italic normal 17px Georgia, "Times New Roman", Times, serif;
+  --minisite-exhibition-item-paper: #FFFFFF;
+  --minisite-exhibition-caption-font: normal 11px/13px verdana, arial , helvetica;
+  --minisite-exhibition-caption-link: #666666;
+  --minisite-exhibition-more: #999999;
+  --minisite-credits-color: #fff;
+  --minisite-credits-font: 11px/16px Verdana, Arial, Helvetica, sans-serif;
+  --minisite-credits-title-font: bold 13px/17px Verdana, Arial, Helvetica, sans-serif;
+}
 
-  /* ---------- Header ---------- */
-  --mwnf-header-padding: 1.25rem;
-  --mwnf-header-background: transparent;
-  --mwnf-header-text: inherit;
-  --mwnf-header-title-size: 1.75rem;
-  --mwnf-header-subtitle-size: 1rem;
-  --mwnf-header-subtitle-color: #555555;
-
-  /* ---------- Banner ---------- */
-  --mwnf-banner-padding: 0;
-  --mwnf-banner-background: transparent;
-  --mwnf-banner-text-color: inherit;
-  --mwnf-banner-text-size: 1.25rem;
-  --mwnf-banner-max-height: 20rem;
-
-  /* ---------- Navigation ---------- */
-  --mwnf-nav-padding: 0.5rem;
-  --mwnf-nav-background: transparent;
-  --mwnf-nav-border: 1px solid #dddddd;
-  --mwnf-nav-gap: 1rem;
-  --mwnf-nav-link-color: #1c1c1c;
-  --mwnf-nav-link-active-color: inherit;
-  --mwnf-nav-link-weight: 500;
-
-  /* ---------- Content ---------- */
-  --mwnf-content-padding-block: 1.5rem;
-  --mwnf-content-background: transparent;
-
-  /* ---------- Hyperlinks ---------- */
-  --mwnf-hyperlinks-padding: 1rem;
-  --mwnf-hyperlinks-background: transparent;
-  --mwnf-hyperlinks-link-color: #1c1c1c;
-
-  /* ---------- Sponsors ---------- */
-  --mwnf-sponsors-padding: 1rem;
-  --mwnf-sponsors-background: transparent;
-  --mwnf-sponsors-gap: 1.5rem;
-  --mwnf-sponsors-logo-height: 2.5rem;
-
-  /* ---------- Footer ---------- */
-  --mwnf-footer-padding: 1.25rem;
-  --mwnf-footer-background: transparent;
-  --mwnf-footer-text-color: #555555;
-  --mwnf-footer-text-size: 0.875rem;
-
-  /* ---------- Shared views (@museumwnf/viewer-core) ----------
-   * The page shell already centers and pads the content section, so the
-   * views inside it fill it edge to edge and inherit the fonts above. */
-  --vc-font-body: var(--mwnf-font-body);
-  --vc-line-height: var(--mwnf-line-height);
-  --vc-color-background: transparent;
-  --vc-color-text: inherit;
-  --vc-content-width: 100%;
-  --vc-content-padding: 0;
-  --vc-weight-label: 600;
+[dir='rtl'] {
+  --minisite-font: normal 14px/14px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-header-logo-left: 450px;
+  --minisite-header-nav-left: 10px;
+  --minisite-header-nav-align: left;
+  --minisite-header-link-font: normal 12px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-select-font: normal 12px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-footer-font: normal 12px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-tip-font: normal 13px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-home-title-left: 275px;
+  --minisite-home-title-top: 55px;
+  --minisite-home-title-width: 450px;
+  --minisite-home-title-font: bold 60px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-home-description-left: 275px;
+  --minisite-home-description-top: 140px;
+  --minisite-home-description-width: 450px;
+  --minisite-home-description-font: bold 17px/20px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-home-menu-left: 75px;
+  --minisite-home-menu-top: 280px;
+  --minisite-home-menu-width: 400px;
+  --minisite-home-menu-font: normal 16px/16px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-home-menu2-left: 100px;
+  --minisite-home-menu2-top: 333px;
+  --minisite-home-menu2-width: 250px;
+  --minisite-home-menu2-font: normal 16px/16px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-home-menu-link-font: normal 16px/16px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-home-menu-link-hover-weight: bold;
+  --minisite-partners-line-font: normal 12px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-intro-title-left: 20px;
+  --minisite-intro-title-top: 50px;
+  --minisite-intro-title-width: 400px;
+  --minisite-intro-title-font: normal 60px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-intro-table-margin: 0 155px 0 0;
+  --minisite-intro-nav-start-left: 245px;
+  --minisite-intro-nav-start-top: 174px;
+  --minisite-intro-nav-start-width: 350px;
+  --minisite-intro-nav-start-align: right;
+  --minisite-intro-nav-start-font: normal 14px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-intro-nav-end-left: 20px;
+  --minisite-intro-nav-end-top: 174px;
+  --minisite-intro-nav-end-width: 378px;
+  --minisite-intro-nav-end-align: left;
+  --minisite-intro-nav-end-font: normal 14px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-intro-nav-link-font: normal 14px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-intro-item-font: normal 13px/15px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-intro-header-font: normal 16px/18px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-intro-text-font: normal 13px/16px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-exhibition-title-left: 150px;
+  --minisite-exhibition-title-top: 10px;
+  --minisite-exhibition-title-width: 600px;
+  --minisite-exhibition-title-font: normal 60px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-exhibition-nav-start-left: 350px;
+  --minisite-exhibition-nav-start-top: 94px;
+  --minisite-exhibition-nav-start-width: 400px;
+  --minisite-exhibition-nav-start-align: right;
+  --minisite-exhibition-nav-start-font: normal 13px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-exhibition-nav-end-left: 10px;
+  --minisite-exhibition-nav-end-top: 94px;
+  --minisite-exhibition-nav-end-align: left;
+  --minisite-exhibition-nav-end-font: normal 13px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-exhibition-nav-link-font: normal 14px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-exhibition-text-width: 380px;
+  --minisite-exhibition-text-paper: #F3ECF4;
+  --minisite-exhibition-page-title-font: normal 20px/21px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-exhibition-thumb-margin: 10px 0px 10px 4px;
+  --minisite-exhibition-text-font: normal 13px/16px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-exhibition-quote-font: normal 20px/22px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
+  --minisite-exhibition-caption-font: normal 13px/14px "Simplified Arabic", "Arabic Transparent", "Traditional Arabic", "Arial (Arabic)", "Times New Roman (Arabic)";
 }

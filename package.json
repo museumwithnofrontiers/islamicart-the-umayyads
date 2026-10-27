@@ -12,14 +12,14 @@
     "lint": "eslint ."
   },
   "viewerI18n": {
-    "class": "standalone",
+    "class": "minisite",
     "namespace": "umayyads"
   },
   "dependencies": {
     "@museumwnf/islamicart-the-umayyads-data": "^1.0.1",
-    "@museumwnf/viewer-core": "^2.5.1",
-    "@museumwnf/viewer-i18n": "^6.0.0",
-    "@museumwnf/viewer-layout": "^3.2.1",
+    "@museumwnf/viewer-core": "^2.10.0",
+    "@museumwnf/viewer-i18n": "^6.2.0",
+    "@museumwnf/viewer-layout": "^3.11.0",
     "vue": "^3.5.0",
     "vue-router": "^5.0.0"
   },
