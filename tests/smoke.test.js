@@ -4,14 +4,27 @@ import {
   checkOfferedLanguages, checkRoutes, checkSectionMeta, checkTextsRendered, mountSite,
 } from '@museumwnf/viewer-core/testing'
 import { catalogues as sharedTexts } from '@museumwnf/viewer-i18n/minisite'
+import { readFileSync } from 'node:fs'
 import ownTexts from '../locales/en.json'
 import config from '../src/dataset.config.js'
+import exhibition from '../src/minisite.json'
+import sources from '../theme/assets/legacy/SOURCES.json'
 
 // The same two layers main.js assembles, in the same order: the shared bundle
 // first, this website's own file last.
 const messages = mergeMessages(sharedTexts, { en: ownTexts })
 
 describe('website smoke test', () => {
+  // A copy of minisite-template is not a mini-site until inventory-app's
+  // scripts/minisites/legacy-minisite.mjs has written what legacy configured
+  // for its exhibition: the settings, the theme and the frame's pictures.
+  it("carries this exhibition's own settings, theme and pictures", () => {
+    expect(exhibition.legacy).toMatch(/^https:\/\/.+\/exhibitions\//)
+    expect(exhibition.curators.length).toBeGreaterThan(0)
+    expect(readFileSync('theme/tokens.css', 'utf8')).toContain('--minisite-')
+    expect(Object.keys(sources.files).length).toBeGreaterThan(0)
+  })
+
   it('draws the home page: the title, the menu and the curators', async () => {
     const { app, host } = await mountSite(config, messages, '#/?lang=en')
     await vi.waitFor(() => expect(host.querySelector('.mwnf-minisite-home__title')?.textContent.trim()).toBeTruthy(), { timeout: 20000 })
