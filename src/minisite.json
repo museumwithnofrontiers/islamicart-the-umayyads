@@ -1,0 +1,17 @@
+{
+  "legacy": "https://islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/",
+  "menuSecondColumnFrom": 7,
+  "curators": [
+    {
+      "partner": "33f89573-8b54-5c1a-86ba-1663e604740f",
+      "logo": "legacy/JO-10.gif",
+      "space": 35
+    },
+    {
+      "partner": "559ab197-7289-5af4-a295-1118bde9afce",
+      "logo": "legacy/DE-10.gif",
+      "space": 30
+    }
+  ],
+  "maps": 1
+}

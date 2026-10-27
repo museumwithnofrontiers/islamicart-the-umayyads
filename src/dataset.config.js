@@ -2,15 +2,17 @@ import { languageLabels, offeredLanguages, sectionMeta, useDataPackage } from '@
 import {
   ISLAMICART_NO_COUNTRY, MinisiteHome, MinisiteShell, minisiteNavigation, minisiteRoutes, minisiteSettings,
 } from '@museumwnf/viewer-layout/minisite'
+import exhibition from './minisite.json'
 
-// The whole declaration of this website: legacy Discover Islamic Art's virtual
-// exhibition "The Umayyads" (islamicart.museumwnf.org/exhibitions/ISL/the_umayyads/),
-// a website of its own. Its pages are every mini-site's — viewer-layout's
-// `./minisite`, legacy's virtual exhibition pages — and what is this
-// exhibition's own is here: its settings below, its theme (theme/tokens.css),
-// its legacy pictures (theme/assets/legacy/, SOURCES.json names where each was
-// taken from). Its records come from the data package, its texts from
-// viewer-i18n's `minisite` bundle (and locales/, which may overload any).
+// The whole declaration of this website: one of legacy Discover Islamic Art's
+// virtual exhibitions (minisite.json names it), a website of its own. Its
+// pages are every mini-site's — viewer-layout's `./minisite`, legacy's virtual
+// exhibition pages — and what is this exhibition's own is minisite.json (what
+// legacy configured for it alone), its theme (theme/tokens.css) and its legacy
+// pictures (theme/assets/legacy/, SOURCES.json names where each was taken
+// from), all three written by inventory-app's scripts/minisites/legacy-minisite.mjs.
+// Its records come from the data package, its texts from viewer-i18n's
+// `minisite` bundle (and locales/, which may overload any).
 
 const { manifest } = useDataPackage()
 
@@ -48,23 +50,24 @@ export default {
 
   navigation: minisiteNavigation({ languages: languageLabels(languages), parent }),
 
-  // What legacy configured for this exhibition alone (the_umayyads/libs/
-  // config.inc.php, index.php, ISL/libs/config.inc.php).
+  // What legacy configured for this exhibition alone (its libs/config.inc.php
+  // and index.php, and ISL/libs/config.inc.php).
   minisite: minisiteSettings({
     parent,
     // The home menu's second column starts at this position ($_HOME_MENU_COL2).
-    menuSecondColumnFrom: 7,
-    // The curators the home page credits (HOMELOGOS): each partner's logo and the space after it.
-    curators: [
-      { partner: '33f89573-8b54-5c1a-86ba-1663e604740f', logo: 'legacy/JO-10.gif', space: 35 },
-      { partner: '559ab197-7289-5af4-a295-1118bde9afce', logo: 'legacy/DE-10.gif', space: 30 },
-    ],
-    // The introduction's map ($INTROPAGE_HAVEMAP): one picture per language.
-    map: {
-      thumbnail: 'legacy/intro_map_thumb.jpg',
-      picture: (lang, n) => (n ? `legacy/map${n}_${lang}.jpg` : `legacy/map_${lang}.jpg`),
-      count: 1,
-    },
+    menuSecondColumnFrom: exhibition.menuSecondColumnFrom,
+    // The curators the home page credits (HOMELOGOS): a partner, or a name and
+    // a country as legacy wrote them, each with its logo and the space after it.
+    curators: exhibition.curators,
+    // The introduction's map ($INTROPAGE_HAVEMAP): one picture per language,
+    // and one more per further map legacy drew.
+    map: exhibition.maps
+      ? {
+          thumbnail: 'legacy/intro_map_thumb.jpg',
+          picture: (lang, n) => (n ? `legacy/map${n}_${lang}.jpg` : `legacy/map_${lang}.jpg`),
+          count: exhibition.maps,
+        }
+      : null,
     noCountry: ISLAMICART_NO_COUNTRY,
     documentTitle: 'MWNF DISCOVER ISLAMIC ART: Exhibition',
   }),
