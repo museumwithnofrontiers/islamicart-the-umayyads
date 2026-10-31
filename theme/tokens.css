@@ -28,6 +28,7 @@
   --minisite-menu-link: #A89CAE;
   --minisite-strip: #4e375b;
   --minisite-footer: #382741;
+  --minisite-footer-height: 18px;
   --minisite-footer-text: #AEA4B4;
   --minisite-footer-font: Normal 9px verdana, arial , helvetica;
   --minisite-footer-link: #A89CAE;
@@ -70,7 +71,12 @@
   --minisite-partners-line-margin-bottom: 10px;
   --minisite-partners-line-font: Normal 9px verdana, arial , helvetica;
   --minisite-partners-link: #ffffff;
+  --minisite-partners-color: #8a9fa8;
+  --minisite-partners-width: 100%;
+  --minisite-partners-padding: 10px 0;
+  --minisite-partners-line-color: #fff;
   --minisite-intro-paper: #F3ECF4;
+  --minisite-intro-padding-top: 200px;
   --minisite-intro-title-left: 342px;
   --minisite-intro-title-top: 56px;
   --minisite-intro-title-width: 300px;
